@@ -1,0 +1,41 @@
+.container {
+  -webkit-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+  transition: scale linear .2s;
+
+  &:hover {
+    scale: 1.02;
+  }
+
+  .name {
+    text-align: center;
+    margin: 16px 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-self: center;
+
+    .infoElement {
+      border: 1px solid #eeeeee;
+      width: 100%;
+      text-align: center;
+      opacity: 70;
+      font-size: 16px;
+    }
+
+    .titleElement {
+      font-size: 14px;
+    }
+  }
+}
+
+
+
+
+

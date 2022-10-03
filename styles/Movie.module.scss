@@ -1,0 +1,28 @@
+@import "../styles/mixins";
+.container {
+  @include container();
+  .main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    .cover {
+      flex: 1;
+    }
+    .info {
+      flex: 1;
+      padding: 20px;
+      .name {
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+  }
+  .episodes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+}
